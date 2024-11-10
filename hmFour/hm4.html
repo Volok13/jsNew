@@ -63,6 +63,15 @@
     //
     // printerArray(users);
 
+    // let arr = [];
+    // function addObjToConcreteArray(obj, array) {
+    //     array[array.length] = obj;
+    // }
+    // addObjToConcreteArray({id: 1}, arr);
+    // addObjToConcreteArray({id: 2, name: 'Klara', status: true}, arr);
+    // addObjToConcreteArray({id: 3, name: 'Max', status: false}, arr);
+    //
+    // console.log(arr);
 
 //     // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
 // function writer(text) {
@@ -89,13 +98,68 @@
 
 
 //     - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
-function text (menu, number) {
-    document.write(`
-    <ul>
-    <li>${menu}</li>
-</ul>
-    `)
-}
+
+// function foobar(text, counter) {
+//    document.write('<ul>');
+//     for (let i = o; i < counter; i++) {
+//         document.write(`<li>${text}</li>`);
+//     }
+//     document.write('</ul>');
+// }
+// foobar('hello', 5);
+
+// function createUl(text, ind) {
+//     const ul = document.createElement("ul");
+//     for (let i = 0; i < ind; i++) {
+//         const li = document.createElement("li");
+//         li.textContent = text;
+//         ul.append(li);
+//     }
+//     document.write(ul.outerHTML);
+// }
+//     createUl('hello', 3);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
+// function foobar(text) {
+//     document.write('<ul>')
+//   for (const item of text) {
+//       document.write(`<li>${item}</li>`)
+//   }
+//     document.write('</ul>')
+// }
+//     foobar([1223, 23535, 5324, 'foobar', 'bar', 'second', true, false]);
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// function foobar(users) {
+//     for (const user of users){
+//         document.write(`<div>${user.id} ${user.name} ${user.age}</div>`)
+//     }
+// }
+// foobar([
+//     {id: 1, name: 'Klara', age: 43},
+//     {id: 2, name: 'Masha', age: 23},
+//     {id: 3, name: 'Max', age: 42},
+//     {id: 4, name: 'Vlad', age: 64},
+//     {id: 5, name: 'Lis', age: 26},
+//     {id: 6, name: 'Georg', age: 18},
+// ])
+
+    // - створити функцію яка повертає найменьше число з масиву
+// function arrayMin (numbers) {
+//     let min = numbers[0];
+//     for (let i = 0; i < numbers.length; i++){
+//     let number = nambers[i]
+//     if (namber < min){
+//         min = number
+//     }
+//     }
+//     return min;
+// }
+// console.log(arrayMin([23, 443, 543, 643, 342, 45, 643]));
+
+
+
+
 
 </script>
 
