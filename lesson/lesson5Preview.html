@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+//-----------------------------Функціональні вирази
+  // greeting();
+  // let greeting = function () {
+  //   console.log('hi');
+  //
+  // };Функціональні виразиФункціональні вирази
+
+  // asd();
+  // function asd() {
+  //   console.log('snkfng');
+  // }
+
+//-------------------------------------Стрілочні функції
+
+  // function calc (a, b) {
+  //   return a + b;
+  // }
+
+  // let calc = (a, b) => /*return*/ a + b;
+  // console.log(calc(10, 20));
+
+  // let asd = () => console.log('hi');
+
+// let asd = () => console.log(arguments); - arguments не можна
+// console.log(asd('ASD'));
+
+//---------------------------------Функції в об'єктах та контекст this
+
+// let user = {
+//   name: 'vasya',
+//   greeting: function (msg) {
+//     console.log(this);
+//     return `${msg} my name is ${this.name}`
+//   },
+//   vitanny: (msg) => `${msg} my age is ${user.age}`
+// }
+// console.log(user.greeting('hi'));
+// console.log(user.vitanny('hello'));
+
+//--------------------------------Замикання
+
+// function asd() {
+//   let x = 10;
+//   function inner() {
+//     return ++x;
+//   }
+//   return inner;
+// }
+// console.log(asd()());
+
+// function asd() {
+//   let x = 10;
+//   function inner() {
+//     return ++x;
+//   }
+//   return inner;
+// }
+// let foo = asd();
+// console.log(foo());
+// console.log(foo());
+// console.log(foo());
+// console.log(foo());
+
+
+//
+// let user = {name: 'vasya', age: 132};
+// user.age = - 100500;
+
+
+// function userBuilder(name, age) {
+//   let user = {name, age};
+//   return {
+//     getName() {
+//       return this.name;
+//     },
+//     getAge() {
+//       return this.age;
+//     },
+//     setAge(age) {
+//       if (age > 0){
+//         user.age = age;
+//       }
+//     }
+//   }
+// }
+// let builder = userBuilder('vasya', 31);
+// console.log(builder);
+// console.log(builder.getAge());
+// console.log(builder.getName());
+// builder.setAge(100);
+
+
+//---------------------------Рекурсія
+
+// function foobar() {
+//   console.log('foo');
+//   foo(); //-----так робити не можна бо пака пака пк
+// }
+// foo();
+
+
+// function iterator(arr, i) {
+//   console.log(arr[i]);
+//   i++;
+//   if(i < arr.length) {
+//     iterator(arr, i);
+//   }
+//
+// }
+// iterator([11, 22, 33], 0);
+
+// let arr = [11, 22, 33, [44, 55],[66, 77, [111, 322]]];
+// let innerArray = [];
+// function flatter (array) {
+//     for (const item of array) {
+//         if (Array.isArray(item)) {
+//             flatter(item);
+//         }else {
+//             innerArray.push(item);
+//         }
+//     }
+// }
+// flatter(arr);
+// console.log(innerArray);
+
+//-------------------------------Генератори
+
+
+// function *foo() {
+//     yield  100;
+//     yield  200;
+//     yield  300;
+// }
+// let fooGeneration = foo();
+// console.log(fooGeneration);
+// console.log(fooGeneration.next());
+// console.log(fooGeneration.next());
+// console.log(fooGeneration.next());
+
+// function *cardsHolder() {
+//     const cards = [
+//         {value:6, suite: 'diamond'},
+//         {value:7, suite: 'spade'},
+//         {value:8, suite: 'diamond'},
+//         {value:9, suite: 'spade'},
+//     ]
+//     for (const card of cards) {
+//         yield card;
+//     }
+// }
+// const holder = cardsHolder();
+// console.log(holder.next());
+// console.log(card1.value);
+// //
+// //
+// //
+// console.log(holder.next());
+// console.log(card2.value);
+// console.log(holder.next());
+// console.log(card3.value);
+// //
+// //
+// //
+// //
+// console.log(holder.next());
+// console.log(card4.value);
+
+//-----------------------------------Обробка помилок
+
+console.log(a);
+console.log('start');
+console.log('end');
+
+
+
+
+</script>
+</body>
+</html>
