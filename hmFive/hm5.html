@@ -28,12 +28,11 @@
     // console.log(cilinder(4, 7))
 
     // - створити функцію яка приймає масив та виводить кожен його елемент
-    // function printerArray(array) {
+    // const printerArray = (array) => {
     //     for (const item of array) {
     //         console.log(item);
     //     }
     // }
-    //
     // let users = [
     //     {name: 'vasya', age: 31, status: false},
     //     {name: 'petya', age: 30, status: true},
@@ -51,7 +50,7 @@
     // printerArray(users);
 
     // let arr = [];
-    // function addObjToConcreteArray(obj, array) {
+    // const addObjToConcreteArray = (obj, array) => {
     //     array[array.length] = obj;
     // }
     // addObjToConcreteArray({id: 1}, arr);
@@ -60,10 +59,128 @@
     //
     // console.log(arr);
 
-    // function foobar() {
+    // const foobar = () => {
     //     let p = "<p>Hello</p>"
     //     document.write(p);
     // }
+
+//         // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
+//     const writer = (text) => { document.write (`
+//     <div>
+//     <p>${text}</p>
+//     </div>
+//     `)
+//     }
+//         writer('cucumber');
+
+    //     // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
+//     const foobar = (text) => { document.write(`
+//     <ul>
+//     <li>${text}</li>
+//     <li>${text}</li>
+//     <li>${text}</li>
+//     </ul>
+//     `)
+//
+//     }
+// foobar('hello');
+
+    // //     - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
+    //
+    // const foobar = (text, counter) => {
+    //     document.write(`<ul>`);
+    //     for (let i = 0; i < counter; i++) {
+    //         document.write(`<li>${text}</li>`)
+    //     }
+    //     document.write(`</ul>`);
+    // }
+    // foobar('hello', 5);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
+
+    // const foobar = (text) => {
+    //     document.write(`<ul>`);
+    //     for (item of text) {
+    //         document.write(`<li>${item}</li>`)
+    //     }
+    //     document.write(`</ul>`);
+    // };
+    //     foobar([1223, 23535, 5324, 'foobar', 'bar', 'second', true, false]);
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+//     const foobar = (users) => {
+//         for (const user of users) {
+//             document.write(`
+//             <div>
+//             ${user.id},
+//             ${user.name},
+//             ${user.age}
+//             </div>
+//             `)
+//         }
+//     }
+// foobar([
+//     {id: 1, name: 'kokos', age: 123},
+//     {id: 2, name: 'Klara', age: 23},
+//     {id: 3, name: 'Max', age: 12},
+//     {id: 4, name: 'Lis', age: 13},
+// ]);
+
+    // - створити функцію яка повертає найменьше число з масиву
+
+    // const foobar = (numbers) => {
+    //     let min = numbers[0];
+    //     for (let i = 1; i < numbers.length; i++) {
+    //         let number = numbers[i];
+    //         if (number < min){
+    //             min = number
+    //         }
+    //     }
+    //     return min;
+    // }
+    // console.log(foobar([23, 443, 543, 643, 342, 45, 643]));
+
+    //     - створити функцію sum(arr) яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+
+//     const sum = (arr) => {
+//         let array = 0;
+//         for (const item of arr) {
+//             array = array + item
+//         }
+//         return array;
+//     }
+// console.log(sum([1, 2, 10]));
+
+
+    // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
+    // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+    // const swap = (arr, index1, index2) => {
+    //     if (index1 < arr.length && index2 < arr.length) {
+    //         let temp = arr[index1];
+    //         arr[index1] = arr[index2];
+    //         arr[index2] = temp;
+    //         return arr;
+    //     }
+    //     return arr;
+    // }
+    //
+    // console.log(swap([11,22,33,44],0,1));
+
+
+//     - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+//     Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
+// const exchange = (sumUAH, currencyValues, exchangeCurrency) => {
+//     let chosenCurrency;
+//     for (const item of currencyValues) {
+//         if(item.currency === exchangeCurrency) {
+//             chosenCurrency = item;
+//         }
+//     }
+//     let result = sumUAH / chosenCurrency.value
+//     return result;
+// }
+// console.log(exchange(10000, [{currency:'USD',value:25},{currency:'Eur',value:42}]), 'USD')
 
 
 
