@@ -43,9 +43,110 @@
     //     console.log(reduce);
 
 
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    // створити пустий масив, наповнити його 10 об'єктами new User(....)
 
+    // function User(id, name, surname, email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    // const user = new User('', '', '', '', '');
+    //
+    // let users =[
+    //     new User(1, 'Max', 'Vint', 'gol@gmail.com', '+380637273881'),
+    //     new User(2, 'kokos', 'bhb', 'ji@gmail.com', '+77689202'),
+    //     new User(3, 'vasya', 'hfd', 'ge@gmail.com', '+734849832'),
+    //     new User(4, 'Lis', 'dfml', 'dkf@gmail.com', '+83y49834'),
+    //     new User(5, 'Vlad', 'djlf', 'efnj@gmail.com', '+348793423'),
+    //     new User(6, 'Gleb', 'dfko', 'dkfj@gmail.com', '+8394398'),
+    //     new User(7, 'Marina', 'rjggr', 'jef@gmail.com', '+874397'),
+    //     new User(8, 'Jon', 'dfjodj', 'kdnf@gmail.com', '+4738598589'),
+    //     new User(9, 'Ann', 'jojg', 'ijj@gmail.com', '+987934879'),
+    //     new User(10, 'Tomat', 'odjgfo', 'f@gmail.com', '+984395343')
+    //
+    // ]
+    // console.log(users);
 
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 
+    // let filterUsers = users.filter(user => user.id % 2 === 0 );
+    // console.log(filterUsers);
+
+    // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+
+    // function User(id, name, surname, email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    // const user = new User('', '', '', '', '');
+    //
+    // let users =[
+    //     new User(2, 'kokos', 'bhb', 'ji@gmail.com', '+77689202'),
+    //     new User(3, 'vasya', 'hfd', 'ge@gmail.com', '+734849832'),
+    //     new User(8, 'Jon', 'dfjodj', 'kdnf@gmail.com', '+4738598589'),
+    //     new User(4, 'Lis', 'dfml', 'dkf@gmail.com', '+83y49834'),
+    //     new User(5, 'Vlad', 'djlf', 'efnj@gmail.com', '+348793423'),
+    //     new User(6, 'Gleb', 'dfko', 'dkfj@gmail.com', '+8394398'),
+    //     new User(7, 'Marina', 'rjggr', 'jef@gmail.com', '+874397'),
+    //     new User(1, 'Max', 'Vint', 'gol@gmail.com', '+380637273881'),
+    //     new User(9, 'Ann', 'jojg', 'ijj@gmail.com', '+987934879'),
+    //     new User(10, 'Tomat', 'odjgfo', 'f@gmail.com', '+984395343')
+    //
+    // ]
+    // console.log(users);
+
+    // let sort = users.sort((a, b) =>{
+    //     return a.id - b.id;
+    // });
+    // console.log(sort);
+
+    // function sorter(user1, user2) {
+    //     return user1.id - user2.id;
+    // }
+    // console.log(users.sort(sorter));
+
+    // console.log(users.sort((user1, user2) => user1.id - user2.id));
+
+    // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+    // створити пустий масив, наповнити його 10 об'єктами Client
+
+    // class Client {
+    //     constructor(id, name, surname, email, phone, order) {
+    //         this.id = id;
+    //         this.name = name;
+    //         this.surname = surname;
+    //         this.email = email;
+    //         this.phone = phone;
+    //         this.order = order;
+    //     }
+    // }
+    // let client = new Client ('', '', '', '', '', [{title:'', price:''}]);
+    // let clients = [
+    //     new Client(1, 'Toma', 'felfkj', 'fj@gmail.com', '+839275847', [{title: 'tv', price: 543}]),
+    //     new Client(2, 'Tom', 'kfen', 'fef@gmail.com', '+983949934', [{title: 'phone', price: 4852}, {title: 'tv', price: 9342}]),
+    //     new Client(3, 'Lis', 'eklflf', 'knefg@gmail.com', '+83559345', [{title: 'tv', price: 84382}]),
+    //     new Client(4, 'kokos', 'tomato', 'ffj@gmail.com', '+9840985', [{title: 'phone', price: 535}, {title: 'tablet', price: 5678}, {title: 'phone', price: 4335}]),
+    //     new Client(5, 'cucumber', 'fgkmdf', 'knf@gmail.com', '+98504505', [{title: 'tv', price:3844}, {title: 'tablet', price: 8943}]),
+    //     new Client(6, 'Oleg', 'flld', 'fejn@gmail.com', '+95348985', [{title: 'tablet', price: 58995}]),
+    //     new Client(7, 'Klara', 'gkkg', 'fk@gmail.com', '+9845794', [{title: 'laptop', price: 43852}]),
+    //     new Client(8, 'peach', 'efjfj', 'fo@gmail.com', '+39578957', [{title: 'tablet', price: 3857}, {title: 'laptop', price: 34788}, {title: 'tv', price: 35987}, {title: 'phone', price: 8543}]),
+    //     new Client(9, 'apple', 'ffdsf', 'jfeh@gmail.com', '+857455749', [{title: 'tv', price:352}]),
+    //     new Client(10, 'Olga', 'fkjkj', 'fn@gmail.com', '+895347957', [{title: 'laptop', price: 83947}])
+    //
+    // ]
+    //
+    // console.log(clients);
+
+    // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+    // const sort = clients.sort((a, b) => a.order.length - b.order.length);
+    // console.log(sort);
 
 
 </script>
