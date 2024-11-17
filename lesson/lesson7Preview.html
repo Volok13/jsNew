@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+
+    //------------------------------------Функції конструктори
+
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+
+    // function User(name, age, status) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.status = status;
+    //     console.log(this);
+    //
+    // }
+    // let user1 = new User('asd', 123, true);
+    // let user1 = new User('asd', 1233, false);
+
+
+    // function User(name, age, status, wife) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.status = status;
+    //     this.wife = wife;
+    //
+    // }
+    // let user1 = new User('asd', 1233, false, {name: 'ann'});
+
+    // function User(name, age, status, wifeName, wifeAge) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.status = status;
+    //     this.wife = {name: wifeName, agw: wifeAge};
+    //
+    // }
+    // let user1 = new User('asd', 1233, false, 'anna', 23);
+    // console.log(user1);
+
+    // function User(name, age, status, wifeName, wifeAge) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.status = status;
+    //     this.wife = {name: wifeName, agw: wifeAge};
+    //     this.greeting = function () {
+    //         console.log('hj')
+    //     };
+    //
+    // }
+    // let user1 = new User('asd', 1233, false, 'anna', 23);
+    // console.log(user1);
+
+
+    //---Розширення конструкторів через prototype, підміна this через call apply bind
+
+    // function User (name, age) {
+    //
+    // }
+
+    // let user = new user('vasya', 31);
+    // user.greeting = function (){
+    //     console.log('nskfnn');
+    // };
+    // console.log(user);
+    // user.greeting();
+    //
+    // let user2 = new User('snnfjn', 3244);
+    // console.log(user2);
+    // user2.greeting();
+
+
+    User.prototype.greeting = function () {
+        return `hello my name is ${this.name}`;
+    };
+    let user = new User ('vasya', 12);
+    console.log(user.greeting());
+
+
+</script>
+
+
+</body>
+</html>
