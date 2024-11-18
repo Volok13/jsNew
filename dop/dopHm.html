@@ -378,11 +378,259 @@
 //     return ecourse.modules.includes('docker');
 // }));
 
+// function Car(model, producer, year, maxSpeed, engineVolume) {
+//     this.model = model;
+//     this.producer =producer;
+//     this.year = year;
+//     this.maxSpeed = maxSpeed;
+//     this.engineVolume = engineVolume;
+//     this.drive = function () {
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+//     };
+//     this.info = function () {
+//         for (const key in this) {
+//             console.log(key, this[key]);
+//         }
+//     };
+//     this.increaseMaxSpeed = function (speedToAdd) {
+//         if (speedToAdd > 0) this.maxSpeed = this.maxSpeed + speedToAdd;
+//     };
+//     this.changeYear = function (year) {
+//         if (year > 1815) this.year = year;
+//     };
+//     this.addDriver = function (driver) {
+//         if (driver) this.driver = driver;
+//     };
+// }
+//
+//    const car = new Car('', '', '', '', '', '');
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(100);
+// car.changeYear(1994);
+// car.addDriver({});
+// console.log(car);
 
+  // function Car(model, producer, year, maxSpeed, engineVolume) {
+  //     this.model = model;
+  //   this.producer =producer;
+  //   this.year = year;
+  //   this.maxSpeed = maxSpeed;
+  //   this.engineVolume = engineVolume;
+  //   this.drive = function () {
+  //       console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+  //   };
+  //   this.info = function () {
+  //       for (const key in this) {
+  //           console.log(key, this[key])
+  //       }
+  //   };
+  //   this.increaseMaxSpeed = function (speedToAdd) {
+  //       if(speedToAdd > 0) this.maxSpeed = this.maxSpeed + speedToAdd;
+  //   };
+  //   this.changeYear = function (year) {
+  //       if(year > 1815) this.year = year;
+  //   };
+  //   this.addDriver = function (driver) {
+  //       if(driver) this.driver = driver
+  //
+  //   };
+  //
+  // }
+  // const car = new Car('asd', 'qwe', 1234, 122, 3);
+  // console.log(car);
+  //
+  // car.drive();
+  // car.info();
+  // car.increaseMaxSpeed(100);
+  // car.changeYear(2000);
+  // car.addDriver();
+  // console.log(car);
 
+  // function Car(model, producer, year, maxSpeed, engineVolume) {
+  //     this.model = model;
+  //   this.producer =producer;
+  //   this.year = year;
+  //   this.maxSpeed = maxSpeed;
+  //   this.engineVolume = engineVolume;
+  //   this.drive = function () {
+  //   console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+  //   };
+  //   this.info = function () {
+  //       for (const key in this){
+  //           console.log(key, this[key]);
+  //       }
+  //   };
+  //   this.increaseMaxSpeed = function (newSpeed) {
+  //       if(newSpeed > 0) this.maxSpeed = this.maxSpeed + newSpeed;
+  //   };
+  //   this.changeYear = function (newValue) {
+  //       if(newValue > 1815) this.year = newValue;
+  //   };
+  //   this.addDriver = function (driver) {
+  //       if(driver) this.driver = driver;
+  //   };
+  //
+  // }
+  // let car = new Car('hih', 'jhjh', 1837, 123, 4);
+  // console.log(car);
+  // car.drive();
+  // car.info();
+  // car.increaseMaxSpeed(100);
+  // car.changeYear(2000);
+  // car.addDriver({});
+  // console.log(car);
 
+  // function Car(model, producer, year, maxSpeed, engineVolume) {
+  //     this.model = model;
+  //     this.producer = producer;
+  //     this.year = year;
+  //     this.maxSpeed = maxSpeed;
+  //     this.engineVolume = engineVolume;
+  //     this.drive = function () {
+  //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+  //     };
+  //     this.info = function () {
+  //         for( const key in this){
+  //             console.log(key, this[key]);
+  //         }
+  //     };
+  //     this.increaseMaxSpeed = function (newSpeed) {
+  //         if(newSpeed > 0) this.maxSpeed = maxSpeed + newSpeed;
+  //     };
+  //     this.changeYear = function (newValue) {
+  //        if(newValue > 1815) this.year = newValue;
+  //     };
+  //     this.addDriver = function (driver) {
+  //         if(driver) this.driver = driver;
+  //     }
+  // }
+  //
+  // let car = new Car ('ffg', 'reg', 1934, 342, 2);
+  // car.drive();
+  // car.info();
+  // car.increaseMaxSpeed(300);
+  // car.changeYear(2013);
+  // car.addDriver({});
+  // console.log(car);
 
+  // class Car{
+  //     constructor(model, producer, year, maxSpeed, engineVolume) {
+  //         this.model = model;
+  //           this.producer =producer;
+  //           this.year = year;
+  //           this.maxSpeed = maxSpeed;
+  //           this.engineVolume = engineVolume;
+  //     }
+  //     drive () {
+  //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+  //     };
+  //     info () {
+  //         for (const key in this) {
+  //             console.log(key, this[key])
+  //         }
+  //     };
+  //     increaseMaxSpeed (speedToAdd){
+  //         if(speedToAdd > 0) this.maxSpeed = this.maxSpeed + speedToAdd;
+  //     };
+  //     changeYear (year) {
+  //         if(year > 1815) this.year = year;
+  //     };
+  //     addDriver (driver) {
+  //         if(driver) this.driver = driver
+  //     }
+  //
+  // }
+  // const car = new Car('asd', 'qwe', 1234, 122, 3);
+  // console.log(car);
+  //
+  // car.drive();
+  // car.info();
+  // car.increaseMaxSpeed(100);
+  // car.changeYear(2000);
+  // car.addDriver();
+  // console.log(car);
 
+  // class Cinderella {
+  //     constructor(name, age, footSize) {
+  //         this.name = name;
+  //         this.age = age;
+  //         this.footSize = footSize;
+  //     }
+  // }
+  //
+  // class Prince{
+  //     constructor(name, age, slipper) {
+  //         this.name = name;
+  //         this.age = age;
+  //         this.slipper = slipper;
+  //     }
+  // }
+  //
+  // const cinderellas = [
+  //     new Cinderella('asd1', 12, 34),
+  //     new Cinderella('asd2', 13, 35),
+  //     new Cinderella('asd3', 14, 36),
+  //     new Cinderella('asd4', 15, 37),
+  //     new Cinderella('asd5', 16, 38),
+  //     new Cinderella('asd6', 17, 39),
+  //     new Cinderella('asd7', 18, 40),
+  //     new Cinderella('asd8', 19, 41),
+  //     new Cinderella('asd9', 10, 42),
+  //     new Cinderella('asd10', 21, 43),
+  //
+  // ]
+  // const prince = new Prince('fggr', 234, 36);
+  //
+  // // for(const cinderella of cinderellas) {
+  // //     if (sinderella.footSize === prince.slipper) {
+  // //         prince.wife = sinderells;
+  // //     }
+  // // }
+  //
+  // const cinderellaMain = cinderellas.find(cinderella => cinderella.footSize === prince.slipper);
+  // prince.wife = cinderellaMain ;
+  //
+  // console.log(cinderellaMain);
+
+  // Array.prototype.myForEach = function (callback) {
+  //     const yourArray = this;
+  //     for (const item of yourArray) {
+  //         callback(item);
+  //     }
+  // };
+
+  // [11, 22, 33].myForEach((x) => {
+  //     console.log(x);
+  // });
+  // [11, 22, 33].myForEach((x) => console.log(x));
+
+  // Array.prototype.myFilter = function (predicate) {
+  //     const arr= [];
+  //     for (const item of this) {
+  //         if(predicate(item)){
+  //             arr.push(item);
+  //         }
+  //     }
+  //     return arr;
+  // }
+  //
+  // let users = [
+  //     {name: 'vasya', age: 31, status: false},
+  //     {name: 'petya', age: 30, status: true},
+  //     {name: 'kolya', age: 29, status: true},
+  //     {name: 'olya', age: 28, status: false},
+  //     {name: 'max', age: 30, status: true},
+  //     {name: 'anya', age: 31, status: false},
+  //     {name: 'oleg', age: 28, status: false},
+  //     {name: 'andrey', age: 29, status: true},
+  //     {name: 'masha', age: 30, status: true},
+  //     {name: 'olya', age: 31, status: false},
+  //     {name: 'max', age: 31, status: true}
+  // ];
+  //
+  // const result = users.myFilter((user) => user.status);
+  // console.log(result);
 
 
 
