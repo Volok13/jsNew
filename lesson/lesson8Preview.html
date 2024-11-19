@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+//-----------------------Оператор опціональної послідовності
+
+// let user = {
+//
+// };
+// // user?.foo();
+// user?.name?.fn;
+
+//--------------Новий синтаксис об'єктів та Деструктуризація
+
+// let name = 'vasya';
+// let age = 21;
+// let user = {
+//     name,
+//     age,
+//     foo() {
+//         console.log(this);
+//     }
+// }
+// console.log(user);
+// user.foo();
+
+
+// let user = {
+//     name: 'vasya',
+//     age: 31,
+//     foo() {
+//         console.log(foo);
+//     },
+// };
+
+// let {age, name} = user;
+// console.log(name);
+// // console.log(age);
+// foo();
+//
+//
+// function asd({name}) {
+//     console.log(name);
+// }
+// asd({a:'fnkfnf', name:'dnkf'})
+// asd(pbj);
+
+
+// let user = {
+//     name: 'vasya',
+//     age: 31,
+//     foo() {
+//         console.log(foo);
+//     },
+// };
+// let {status} = user;
+// console.log(status);
+//
+// let name = 'vasya';
+// let age = 21;
+// let user = {
+//     name,
+//     age,
+//     foo() {
+//         console.log(this);
+//     },
+//     wife: {
+//         name: 'anna'
+//     }
+// }
+// console.log(user);
+// user.foo();
+//
+// let {name: userName, age: userAge, wife:{name:wifeName}, wife} = user;
+// console.log(userName);
+// console.log(wife);
+
+// let [a, b, c] = [11, 22, 33];
+// console.log(a, b, c)
+// let [a, , c] = [11, 22, 33];
+// console.log(a, b, c);
+
+
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+
+// let [user1, user2] = users;
+// let {name, age, status} = user1;
+//
+// console.log(user1)
+//
+// let [{name, age, status}, user2] = users;
+// console.log(user1);
+// console.log(user2);
+
+//--------------Spred оператор
+
+// let user = {
+//     name: 'vasya',
+//     age: 123
+// };
+// let user2 = user;
+// let user3 = {
+//     name: 'vasya',
+//     age: 123
+// }
+//
+// console.log(user === user2);
+// console.log(user === user3);
+
+// let user = {
+//     name: 'vasya',
+//     age: 123
+// };
+// let userCopy = {...user};
+// console.log(userCopy);
+// console.log(userCopy === user);
+// userCopy.age = 0;
+// console.log(userCopy);
+// console.log(user);
+
+
+// let nums = [11, 22, 33];
+// let nums2 = [...nums];
+// console.log(nums === nums2);
+
+//----------------------Поверхнева та глибока копії та JSON
+
+// let user = {
+//     name: 'vasya',
+//     skills: ['html', 'js'],
+// };
+// let userClone = {...user};
+// console.log(user === userClone);
+// console.log(user.skills === userClone.skills);
+
+// let s = JSON.stringify(user);//convert to JSON
+// console.log(s);
+
+// let json = '{"name": "vasya}', "skills":["html", "js"]}'
+// let user = {
+//     name: 'vasya',
+//     skills: ['html', 'js'],
+//     greeting: function () {
+//
+//     }
+// };
+
+// let userJsonClone = JSON.stringify(user);
+// console.log(userJsonClone);
+// // JSON.pars('122');
+// // console.log(parse);
+// let parse = JSON.parse(userJsonClone);
+// console.log(parse);
+// console.log(user);
+// console.log(user === parse);
+// console.log(user.skills === parse.skills);
+
+//JSON - спосіб передачі обєкту
+
+// let assign = Object.assign({},user);
+// console.log(assign);
+// console.log(assign === user);
+// console.log(assign.skils === user.skills);
+
+
+//----------------------Prototyping
+
+// console.log({});
+// console.log({}.__proto__);
+
+// let base = {
+//     id:1,
+//     name: 'kokos'
+// }
+// let copy = Object.create(base);
+// copy.surname = 'foobar';
+//
+// console.log(base);
+// console.log(copy);
+// console.log(copy.id);
+// console.log(copy.name);
+// console.log(copy.hasOwnProperty('id'));
+// console.log(copy.hasOwnProperty('surname'));
+// copy.id = 100500;
+// console.log(copy.hasOwnProperty('id'));
+
+//
+// let obj = {};
+// obj.__proto__ = base;
+// console.log(obj);
+
+
+
+//----------------------------------------Descriptors
+
+// let user = {
+//     firstName: 'Taras',
+//     lastname: 'Schevchenko'
+// }
+
+// user.firstName = 'fknkfn';
+// console.log(user);
+// for (const userkey in user){
+//     console.log(userkey);
+// }
+
+// Object.defineProperty(
+//     user,
+//     'id',
+//     {
+//         value:100500,
+//         writable:false,
+//         enumerable: false,
+//         configurable: false
+//     }
+// );
+//
+// console.log(user);
+// user.id = 100;
+// console.log(user);
+// for(const userkey in user) {
+//     console.log(userkey);
+// }
+//
+// Object.defineProperty(
+//     user,
+//     'id',
+//     {
+//         value:200600,
+//         writable:false,
+//         enumerable: false,
+//         configurable: false
+//     }
+// );
+// console.log(user);
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
