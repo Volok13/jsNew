@@ -708,7 +708,7 @@
   //     if(obj){
   //         let functions = [];
   //         for(const key in obj) {
-  //             if(typeof pbj[key] === 'function'){
+  //             if(typeof obj[key] === 'function'){
   //                 const functionClone = obj[key].bind({});
   //                 functions.push(functionClone);
   //             }
@@ -726,6 +726,28 @@
   // clone.foo();
   // console.log(cloner);
 
+  // function cloner (obj) {
+  //     if(obj) {
+  //         let functions = [];
+  //         for(const key in obj) {
+  //             if(typeof obj[key] === 'function') {
+  //                 const functionClone = obj[key].bind({});
+  //                 functions.push(functionClone);
+  //             }
+  //         }
+  //         const cloneObj = JSON.parse(JSON.stringify(obj));
+  //         for(const func of functions) {
+  //             cloneObj[func.key] = func.functionClone
+  //         }
+  //         console.log(cloneObj);
+  //         return cloneObj;
+  //     }
+  //     throw new Error('!!!!!');
+  // }
+  // const clone = cloner({id: 123, name:'fwee', greeting(){ console.log('hello')}, foo(){console.log('bar')}});
+  // // cloner.foo();
+  // console.log(clone);
+
   // let coursesAndDurationArray = [
   //     {title: 'JavaScript Complex', monthDuration: 5},
   //     {title: 'Java Complex', monthDuration: 6},
@@ -737,6 +759,143 @@
   //
   // coursesAndDurationArray.map((course, index) => ({...course, id: index+1}));
 
+
+  // let user = {
+  //     id: 1,
+  //     name: 'kokos',
+  //     age: 23,
+  //     skills: ['html', 'js'],
+  //     writable: true
+  // }
+  //
+  // let jsonUser = JSON.stringify(user);
+  // let parseUser = JSON.parse(jsonUser);
+  // console.log(parseUser === user);
+  // console.log(parseUser.id === user.id);
+  //
+  // let userId = parseUser.id;
+  // userId = 3;
+  //
+  // console.log(userId);
+  // console.log(typeof parseUser.writable);
+  // function copeJson (copeObj){
+  //     for(const copeObjKey in copeObj){
+  //
+  //     }
+  // }
+
+  let users = [
+      {name: 'vasya', age: 31, status: false},
+      {name: 'petya', age: 30, status: true},
+      {name: 'kolya', age: 29, status: true},
+      {name: 'olya', age: 28, status: false},
+      {name: 'max', age: 30, status: true},
+      {name: 'anya', age: 31, status: false},
+      {name: 'oleg', age: 28, status: false},
+      {name: 'andrey', age: 29, status: true},
+      {name: 'masha', age: 30, status: true},
+      {name: 'olya', age: 31, status: false},
+      {name: 'max', age: 31, status: true}
+  ];
+      for(const num in users){
+         console.log(users['name'])
+      }
+
+
+  // let user = {
+  //     id: 1,
+  //     name: 'vasya',
+  //     status: true,
+  //     skills: [],
+  // }
+  // for (let fieldName in user) {
+  //     cosole.log(fieldName);
+  // }
+
+
+
+
+  // let filter = userFilter(users);
+  // console.log(filter);
+
+
+  // function clon(obj){
+  //     if(obj === null || obj === undefined)return obj;
+  //     if(typeof pbj === 'number' && isNan(obj)) return Nan;
+  //     if(typeof obj === 'function') return obj;
+  //     if(typeof obj !== 'object') return obj;
+  // }
+
+  // function copeObject(obj) {
+  //     let cope = [];
+  //     if(Array.isArray(obj)) {
+  //         copy = [];
+  //         for (let i = 0; i < obj.length; i++){
+  //             cope[i] = copeObject(obj[i]);
+  //         }
+  //     }else if (obj instanceof Date) {
+  //
+  //     }
+  // }
+
+
+  // let obj = {
+  //     id:1,
+  //     name: 'kokos',
+  //     age: 32,
+  //     wife:{
+  //         name: 'anna',
+  //         age: 31,
+  //         skill: {
+  //             title: 'js'
+  //         }
+  //     }
+  // }
+  // objExplorer(obj);
+
+  // function objExpolorer(obj) {
+  //   for (const key in obj){
+  //     if (typeof key !== 'undefined') {
+  //         Object.create(key === 'undefined')
+  //     }else if(typeof key === 'NaN'){
+  //         console.log(obj);
+  //     }else if(typeof key === 'null'){
+  //         console.log(obj);
+  //       }else{
+  //       console.log('!!!!!');
+  //     }
+  //   }
+  // }
+
+
+
+  //
+  // function objExplorer(obj) {
+  //   for (const key in obj){
+  //     if (typeof obj[key] === Object(key)) {
+  //         Object.getPrototypeOf(obj[key]);
+  //     }else {
+  //
+  //     }
+  //   }
+  // }
+  // console.log(obj)
+  // let obj = {
+  //   name: 'vasya', age:32, wife: {
+  //     name:'anna',
+  //     surname: 'nkfkjnfk',
+  //     skill : {
+  //       title: 'java',
+  //       exp: 10
+  //     }
+  //   }
+  // };
+  // objExpolorer(obj)
+
+
+
+// let usersCope = JSON.parse(JSON.stringify(user));
+//   console.log(usersCope === user);
 
 </script>
 </body>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+// let cloneCreating = function (entity) {
+//   if (entity) {
+//     let copy = JSON.parse(JSON.stringify(entity));
+//     for(let key in entity) {
+//       if (typeof entity[key] === 'function') {
+//         copy[key] = entity[key].bind();
+//       }
+//     }
+//     return copy;
+//   }else {
+//     console.log('!!!')
+//   }
+// }
+
+// function deepCopy(obj) {
+//   if(obj) {
+//     let objClone = {...obj};
+//     let userJson = JSON.stringify(obj);
+//     let userJson2 = JSON.parse(userJson);
+//
+//     // let set = new Set();
+//     // for(const objCloneKey in objClone){
+//     //   set.add(objCloneKey);
+//     // }
+//     // for(const userJSONCopi2Key in userJSONCope2) {
+//     //   set.add(userJSONCope2);
+//     // }
+//
+//
+//     const map = new Map();
+//     map.set('greeting', {val: () => console.log(), type:typeof obj['key']});
+//
+//     return set;
+//
+//
+//   }
+// }
+
+
+// function asd() {}
+// asd.apply({});
+// const copyAsd = asd.bind({})
+// copyAsd()
+
+
+// function cloner (obj) {
+// перевіряємо обект на присутність фбо тру подібне значення
+//     if(obj) {
+// це пустий масив який ми будемо наповнювати копіями функцій з нашого обєкту
+//         let functions = [];
+// ітерація ключів обєкту
+//         for(const key in obj) {
+// перевірка берем з обєкту фкусь характеристику і перевіряємо чи це функція
+//             if(typeof obj[key] === 'function') {
+// якщо так то робимо копію цієї функції
+//                 const functionClone = obj[key].bind({});
+// наповнюємо масив обєкту який складається з копії фн + назви ключа цієї функції
+//                 functions.push(functionClone);
+//             }
+//         }
+// глибоку копію обєкту яка прибирає функцію
+//         const cloneObj = JSON.parse(JSON.stringify(obj));
+// беремо масив з 102 рядка з копіями функції (воно в обєкті лежать) і ітеруємо його
+// дістаємо кожен обєкт (в якому лежить сама функція + її назва) з масиву
+//         for(const func of functions) {
+// звертаємось до клонованого обєкту (без функції) і динамічно додаємо йому нову характеристику
+// яка зветься так само як і перворідна функція
+// а як
+//             cloneObj[func.key] = func.functionClone
+//         }
+//         console.log(cloneObj);
+//         return cloneObj;
+//     }
+//     throw new Error('!!!!!');
+// }
+// const clone = cloner({id: 123, name:'fwee', greeting(){ console.log('hello')}, foo(){console.log('bar')}});
+// // cloner.foo();
+// console.log(clone);
+
+
+
+</script>
+
+
+</body>
+</html>
