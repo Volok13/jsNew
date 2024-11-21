@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .user{
+           background: silver;
+            margin-bottom: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--<hi>-->
+<!--    DOM title-->
+<!--</hi>-->
+
+<!--<ul class="menu" id="list-1">-->
+<!--    <li>item 1 1</li>-->
+<!--    <li>item 1 2</li>-->
+<!--    <li>item 1 3</li>-->
+<!--    <li>item 1 4</li>-->
+<!--    <li>item 1 5</li>-->
+<!--</ul>-->
+
+<!--<ul class="menu" id="list-2">-->
+<!--    <li>item 2 1</li>-->
+<!--    <li>item 2 2</li>-->
+<!--    <li>item 2 3</li>-->
+<!--    <li>item 2 4</li>-->
+<!--    <li>item 2 5</li>-->
+<!--</ul>-->
+
+<!--<form action="" name="f1">-->
+<!--    <input type="text" placeholder="username" name="username">-->
+<!--    <button>send</button>-->
+
+
+<!--</form>-->
+
+<!--<form action="" name="f2">-->
+<!--    <input type="email" placeholder="email" name="userEmail">-->
+<!--    <button>send email</button>-->
+
+
+<!--</form>-->
+//
+console.log(document.forms);
+// console.log(document.forms['f1'].username);
+// console.log(document.forms['f1'] ['username']);
+//
+// console.log(document.forms.f2.userEmail);
+
+<!--<h1>before</h1>-->
+<!--<div id="target" class="point">-->
+<!--    <b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Ab at autem blanditiis consectetur corporis <span>cupiditate debitis dicta dignissimos</span>distinctio est et eum excepturi explicabo, facilis, ipsum itaque minus modi nostrum officiis perspiciatis quae quos reiciendis rerum sit suscipit temporibus tenetur, unde ut voluptatem voluptatum? Aliquam aut autem consectetur deleniti, dicta dolor dolorem, et exercitationem, illum incidunt inventore itaque libero maxime nostrum officiis pariatur quae quasi rem voluptates voluptatum. Amet animi architecto aspernatur atque consequuntur culpa deserunt dicta dolorem eveniet incidunt ipsum, iure maiores maxime nesciunt pariatur sint tempore velit? Doloribus enim expedita harum impedit inventore natus nobis nostrum quia sapiente.-->
+<!--</div>-->
+<!--<div id="???" class="point">-->
+<!--    <b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Ab at autem blanditiis consectetur corporis <span>cupiditate debitis dicta dignissimos</span>distinctio est et eum excepturi explicabo, facilis, ipsum itaque minus modi nostrum officiis perspiciatis quae quos reiciendis rerum sit suscipit temporibus tenetur, unde ut voluptatem voluptatum? Aliquam aut autem consectetur deleniti, dicta dolor dolorem, et exercitationem, illum incidunt inventore itaque libero maxime nostrum officiis pariatur quae quasi rem voluptates voluptatum. Amet animi architecto aspernatur atque consequuntur culpa deserunt dicta dolorem eveniet incidunt ipsum, iure maiores maxime nesciunt pariatur sint tempore velit? Doloribus enim expedita harum impedit inventore natus nobis nostrum quia sapiente.-->
+<!--</div>-->
+<!--<div xxx="???" class="point">-->
+<!--    <b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Ab at autem blanditiis consectetur corporis <span>cupiditate debitis dicta dignissimos</span>distinctio est et eum excepturi explicabo, facilis, ipsum itaque minus modi nostrum officiis perspiciatis quae quos reiciendis rerum sit suscipit temporibus tenetur, unde ut voluptatem voluptatum? Aliquam aut autem consectetur deleniti, dicta dolor dolorem, et exercitationem, illum incidunt inventore itaque libero maxime nostrum officiis pariatur quae quasi rem voluptates voluptatum. Amet animi architecto aspernatur atque consequuntur culpa deserunt dicta dolorem eveniet incidunt ipsum, iure maiores maxime nesciunt pariatur sint tempore velit? Doloribus enim expedita harum impedit inventore natus nobis nostrum quia sapiente.-->
+<!--</div>-->
+
+<h2>after</h2>
+
+<!--<div class="users"></div>-->
+<!--<ul class="users"></ul>-->
+
+
+<script>
+
+    //html псевдо масив
+
+    //-DOM   Об'єктна модель документа та пошук елементів
+
+    // console.log(document); //весь браузерний лист //обєкт
+    // console.log(document.head);
+    // console.log(document.head.children);
+    //
+    // console.log(document.body);
+    // console.log(document.body.innerHTML);
+
+    // let ul1 = document.getElementById('list-2');
+    // console.log(ul1);
+
+
+
+    // let menuCollection = document.getElementsByClassName('menu');
+    // console.log(menuCollection);
+    //
+    // for(const menuCollectionElement of menuCollection) {
+    //     console.log(menuCollectionElement);
+    // }
+
+    // let liList = document.getElementsByTagName('ul');
+    // console.log(liList);
+    //
+    // let list1 = document.getElementById('#list-1');
+    // console.log(list1);
+    //
+    // let list1LiCollection = list1.getElementsByTagName('li');
+    // console.log(list1LiCollection);
+
+    // console.log(document.querySelector('body .menu'));//знаходить 1 елемент
+    // console.log(document.querySelectorAll('ul'));//знаходить всі елементи
+
+    // console.log(document.querySelectorAll('.menu:nth-child(2)>li'));
+    // let nodeListOf = document.querySelectorAll('#list-2>li');
+    // console.log(nodeListOf);
+    //
+    // for(const node of nodeListOf) {
+    //     console.log(node);
+    // }
+
+    //-----------------------------Forms API
+
+    // console.log(document.forms);
+    // console.log(document.forms['f1'].username);
+    // console.log(document.forms['f1'] ['username']);
+    //
+    // console.log(document.forms.f2.userEmail);
+
+
+    //------------------------- Маніпуляція DOM елементами
+
+    // let target = document.getElementById('target');
+    // console.log(target.innerText);
+    // // target.innerText = 'okten';
+    // target.style.background = 'silver';
+
+    // console.log(target.classList);
+    // target.classList.add('foo');
+    // target.classList.add('bar');
+    // console.log(target.classList.keys());
+    // console.log(target.classList.item(0));
+    // console.log(target.classList.contains('bar'));
+    // target.classList.toggle('bar')
+
+    // console.log(target.getAttribute('xxx'));
+    // console.log(target.getAttribute('id'));
+    // console.log(target.getAttribute('class'));
+    // console.log(target.getAttribute('style'));
+    //
+    // target.setAttribute('id', 'lfmlfgglg');
+
+    // console.log(target.previousElementSibling);
+    // console.log(target.nextElementSibling);
+
+    // console.log(target.children);//html
+    // console.log(target.childNodes);//опвертають вузли
+
+    // target.innerHTML = '<b> asdig </b>'
+    // target.innerText = '<b> asdig </b>'
+
+    // console.log(target.outerHTML);//презентація зовні
+
+    // let collectionOfDiv = document.getElementsByClassName('point')
+    // for(const diveElement of collectionOfDiv) {
+    //     diveElement.innerText = 'kfdnkdmnklfgl'
+    //     diveElement.classList.add = ('qqq');
+    // }
+
+    //-------------------------Створення елементівc
+
+    // let h2 = document.createElement('h2');
+    // h2.innerText = 'some title'
+    // document.body.appendChild(h2);
+
+
+    // let allUsersDiv = document.getElementsByClassName('users') [0];
+    //
+    // let users = [//name:string age:number status:boolean
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+
+    // for (const user of users){
+    //     let div = document.createElement('div');
+    //     div.classList.add('user');
+    //     div.innerText = user.name
+    //     allUsersDiv.appendChild(div);
+    // }
+
+    // for (const user of users){
+    //     let li = document.createElement('li');
+    //     li.classList.add('user');
+    //     li.innerText = user.name
+    //     allUsersDiv.appendChild(li);
+    // }
+
+    // for(const user of users){
+    //    let userInfoD1 = document.createElement('div');
+    //    let h2 = document.createElement('h2');
+    //    h2.innerText = user.name;
+    //
+    //    let p = document.createElement('p')
+    //     p.innerText = user.status + ' ' + user.age;
+    //
+    //    // userInfoD1.appendChild(h2);
+    //    // userInfoD1.appendChild(p);
+    //     userInfoD1.append(h2 , p);
+    //
+    //    document.body.appendChild(userInfoD1);
+    // }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
