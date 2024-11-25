@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .products img{
+            width: 200px;
+            height: 200px;
+        }
+        .products button{
+            display: block;
+            width: 200px;
+        }
+        #target{
+            width: 200px;
+            height: 200px;
+            background: silver;
+        }
+    </style>
+</head>
+<body>
+
+<div id="target"></div>
+
+<form id="f1">
+    <input id="i1" name="username">
+    <button>send</button>
+</form>
+
+<div class="products">
+
+</div>
+
+
+<script>
+    
+    //------------------------Події
+
+    // let i1 = document.getElementById('i1');
+    // i1.oninput = function () {
+    //     console.log(this.value);
+    //     target.innerText = this.value;
+    // }
+
+    // let target = document.getElementById('target')
+    // let f1 = document.forms.f1;
+    // f1.onsubmit = function () {
+    //     console.log('hello')
+    // }
+    // f1.onsubmit = function (ev) {
+    //     ev.preventDefault();
+    //     console.log('hello');
+    //     let user = {name: this.username.value}
+    //     console.log(user);//ls fetch opi
+    // };
+
+    // let button = document.getElementsByTagName('button')[0];
+    // button.onclick = function () {
+    //     let value = f1.username.value;
+    // }
+
+    // f1.username.
+
+
+
+// let target = document.getElementById('target')
+// target.onclick = function (ev) {
+//     console.log('click');
+//     console.log(ev);
+// };
+//
+// target.onclick = function () {
+//     console.log('nkfgfngf');
+// }
+// console.log(target);
+//
+// target.addEventListener('click', function (ev) {
+//    console.log(ev);
+// });
+//
+// target.onmouseover = function () {
+//     console.log('over');
+// };
+//
+// target.onmouseleave = function () {
+//     console.log('leave');
+// };
+//
+// target.onmousemove = function (ev) {
+//     console.log('move');
+//     console.log(ev.clientX, ev.clientY);
+//     let r = ev.clientX;
+//     let g = ev.clientX;
+//     let b = ev.clientX;
+//     this.style.background = `rgb(${r}, ${g}, ${b}`
+// }
+
+
+    // window.onload = function () {
+    //     console.log('load');
+    // };
+    // // document.onreadystatechange = function () {
+    // //     console.log(document.readyState);
+    // // }
+    //
+    // document.onreadystatechange = function () {
+    //     if (document.readyState === 'interactive'){
+    //         document.body.innerText = 'loading start...'
+    //     }
+    //     if (document.readyState === 'complete'){
+    //         document.body.innerText = 'loading complete'
+    //     }
+    // }
+
+
+    //------------------------Локальне сховище
+
+    // let item = localStorage.getItem('asd');
+    // console.log(item);
+    // localStorage.clear();
+
+    // localStorage.setItem('user', JSON.stringify({id:1, name:'kokos'}));
+
+    // let userJSON = localStorage.getItem('user');
+    // console.log(userJSON);
+    // let user = JSON.parse(userJSON);
+    // console.log(user);
+    // user.age = 31;
+    // console.log(user);
+    // let stringify = JSON.stringify(user);
+    // localStorage.setItem('user', stringify);
+
+
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+    //
+    // localStorage.setItem('users', JSON.stringify(users));
+
+    // let usersJSON = localStorage.getItem('users');
+    // console.log(usersJSON);
+    // let users = JSON.parse(usersJSON);
+    // console.log(users);
+    // users.push(users);
+
+    // localStorage.setItem('users', JSON.stringify(users));
+
+
+    //------------------------ Локальне сховище приклад
+
+
+ //    let productsDiv = document.getElementsByClassName('products')[0];
+ //      let products = [
+ //   {
+ //     title: 'milk',
+ //     price: 22,
+ //     image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+ //   },
+ //   {
+ //     title: 'juice',
+ //     price: 27,
+ //     image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+ //   },
+ //   {
+ //     title: 'tomato',
+ //     price: 47,
+ //     image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+ //   },
+ //   {
+ //     title: 'tea',
+ //     price: 15,
+ //     image: 'https://peekncooksa.blob.core.windows.net/index-recipe/indian_spiced_tea.jpg'
+ //   },
+ // ];
+ //
+ //      for (const product of products){
+ //          let productBlock = document.createElement('div');
+ //
+ //          let h2 = document.createElement('h2');
+ //          h2.innerText = `${product.title} ${product.price} UAH`;
+ //
+ //          let img = document.createElement('img');
+ //          img.src = product.image;
+ //
+ //          let buttonElement = document.createElement('button');
+ //          buttonElement.innerText = 'add to cart';
+ //
+ //          buttonElement.onclick = function () {
+ //              // if (!localStorage.getItem('cart')){
+ //              //     localStorage.setItem('car', JSON.stringify([]))
+ //              // }
+ //
+ //              let cart = JSON.parse(localStorage.getItem('cart')) || [];
+ //              cart.push(product);
+ //              localStorage.setItem('cart', JSON.stringify(cart));
+ //
+ //
+ //
+ //
+ //
+ //
+ //          };
+ //
+ //          productBlock.append(h2, img, buttonElement);
+ //
+ //          productsDiv.appendChild(productBlock);
+ //      }
+ //
+ //
+ //
+ //   // let product = document.createElement(`div`)
+ //
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

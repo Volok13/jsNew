@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #text{
+            width: 200px;
+            height: 200px;
+            background: silver;
+        }
+        #button{
+            width: 200px;
+            background: slategray;
+        }
+    </style>
+</head>
+<body>
+<!--<input type="button" id="button" value="click on me">-->
+<!--<div id="text"></div>-->
+
+
+<!--    <input type="text" value="" id="year">-->
+<!--    <input type="submit" onclick="func()">-->
+
+<!--<form class="f1">-->
+<!--    <input id="i1" name="name" value="" class="in1">-->
+<!--    <input id="i2" name="username" value="" class="in2">-->
+<!--    <input id="i3" name="age" value="" class="in3">-->
+<!--    <button>send</button>-->
+<!--    <div class="text"></div>-->
+<!--</form>-->
+
+<!--<form name="someForm">-->
+<!--    <input type="text" name="name">-->
+<!--    <input type="text" name="surname">-->
+<!--    <input type="number" name="age">-->
+<!--&lt;!&ndash;    <input type="button" name="sendButton" value="send">&ndash;&gt;-->
+<!--    <button>send</button>-->
+<!--</form>-->
+
+<!--<div id="target"></div>-->
+
+
+<!--<div id="target"></div>-->
+
+<!--<input id="xxx" type="number">-->
+<!--<div id="result"></div>-->
+
+<form name="tableGeneratorForm">
+    <input type="number" name="lines">
+    <input type="number" name="cells">
+    <input type="text" name="data">
+    <button>generate</button>
+</form>
+<table id="table">
+
+</table>
+
+<script>
+
+    //--- Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+
+    // let text = document.createElement('div');
+    // text.innerText = 'text';
+    // // let button = document.createElement('button')
+    // // button.innerText = 'click me '
+    // document.getElementById('button').onclick  = function () {
+    //     document.getElementById('text').hidden = true;
+    // }
+
+
+    //--- створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+   // function func() {
+   //     let elem = document.getElementById('year');
+   //     let age = elem.value;
+   //     if(age < 19) {
+   //         alert("you age too young");
+   //     }else if(age > 65) {
+   //         alert("you are too old");
+   //     }else {
+   //         alert("your age ok")
+   //     }
+   // }
+
+    //----Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
+
+
+    // document.querySelector('button').onclick = click;
+    // function click() {
+    //     let a = document.querySelector('.in1').value;
+    //     console.log(a);
+    //     let b = document.querySelector('.in2').value;
+    //     console.log(b);
+    //     let c = document.querySelector('.in3').value;
+    //     console.log(c);
+    //     document.querySelector('.text').innerText = a;
+    //     document.querySelector('.text').innerText = b;
+    //     document.querySelector('.text').innerText = c;
+    // }
+
+    // const someForm = document.forms.someForm;
+    // const target = document.getElementById('target');
+    //
+    // someForm.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    // const nameValue = someForm.name.value;
+    // const surnameValue = someForm.surname.value;
+    // const ageValue = someForm.age.value;
+    // let obj = {nameValue, surnameValue, ageValue}
+    // console.log(obj);
+    // target.innerText = obj.nameValue + ' ' + obj.surnameValue + ' ' + obj.ageValue;
+    //
+    // });
+
+
+    // const sendButton = someForm.sendButton;
+
+    // sendButton.addEventListener('click', () => {
+    //     const nameValue = someForm.name.value;
+    //     const surnameValue = someForm.surname.value;
+    //     const ageValue = someForm.surname.age;
+    //     let obj = {nameValue, surnameValue, ageValue}
+    //     console.log(obj);
+    // })
+
+
+    //--є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+
+    // let currentNumber = +localStorage.getItem('number');
+    // currentNumber += 1;
+    // localStorage.setItem('number', currentNumber);
+    //
+    // document.getElementById('target').innerText = currentNumber;
+
+
+    //--Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessionsList зберігається інформація про дату та час відвідування сторінки. Є  сторінка sessionsListPage.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а малювати в DOM
+
+    // const sessionsListJSON = JSON.parse(localStorage.getItem('sessionsList'));
+
+    // let sessionsList = [];
+    // if(localStorage.getItem('sessionsList')){
+    //     sessionsList = JSON.parse(localStorage.getItem('sessionsList'));
+    // }
+    // sessionsList.push(new Date());
+    // localStorage.setItem('sessionsList', JSON.stringify(sessionsList));
+
+    // let sessionsList = JSON.parse(localStorage.getItem('sessionsList')) || [];
+    // sessionsList.push(new Date());
+    // localStorage.setItem('sessionsList', JSON.stringify(sessionsList));
+
+
+    //----створити конвертор ваги з кг в фунти. данні заповнюються через інпут. При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
+
+    // const input = document.getElementById('xxx');
+    // const resultDiv = document.getElementById('result')
+    // input.oninput = function () {
+    //    // const kilos = +this.value;
+    //    // resultDiv.innerText = kilos * 2.2;
+    //
+    //     resultDiv.innerText = +this.value * 2.2;
+    // };
+
+
+
+    //--В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об'єкт
+    // сигнатура функції -
+    // addToLocalStorage(arrayName:string,objToAdd:any{}):void
+
+    // function addToLocalStorage(arrayName, objToAdd) {
+    //     const lsItem = localStorage.getItem(arrayName);
+    //   if(!lsItem){
+    //       throw new Error('there is no such array');
+    //   }
+    //   const array = JSON.parse(lsItem);
+    //   if(typeof objToAdd === 'object'){
+    //       array.push(objToAdd);
+    //   }
+    //   localStorage.setItem(arrayName, JSON.stringify(array));
+    // }
+    //
+    // addToLocalStorage('users', {});
+
+    //---Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+    // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+
+
+    // const table = document.getElementById('table');
+    // const tableGeneratorForm = document.forms['tableGeneratorForm'];
+    // tableGeneratorForm.onsubmit = function (e) {
+    //     table.innerText = '';
+    //     e.preventDefault();//-щоб сторінка не перезавантажувалась
+    //     const linesValue = +tableGeneratorForm.lines.value;
+    //     const cellsValue = +tableGeneratorForm.cells.value;
+    //     const dataValue = tableGeneratorForm.data.value;
+    //     console.log( linesValue, cellsValue, dataValue);
+    //
+    //     for (let i = 0; i < linesValue; i++) {
+    //         const tr = document.createElement('tr');
+    //         for (let j = 0; j < cellsValue; j++) {
+    //             const td = document.createElement('td')
+    //             td.innerText = dataValue;
+    //             tr.appendChild(td);
+    //         }
+    //         table.appendChild(tr);
+    //
+    //     }
+    //
+    // };
+
+    // *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
+    // при перезавантаженні сторінки до значаення додається по 10грн, але !!!
+    //     зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
+    //     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
