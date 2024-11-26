@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label>
+        userId
+        <input type="text" name="userId" pattern="[0 - 9]">
+    </label>
+    <label>
+        title
+        <input type="text" name="title">
+    </label>
+    <label>
+        body
+        <input type="text" name="body">
+    </label>
+    <button>save</button>
+</form>
+
+<script>
+//------------------------------------API p1
+//------------------------------------API p2
+//------------------------------------API p3
+//------------------------------------API p4
+//------------------------------------API p5
+//------------------------------------API p6
+//------------------------------------API p7
+//------------------------------------fetch
+
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then((response) => {
+//         console.log(response);
+//         return response.json();//json() - витягує тіло перевіряє булеві обєкти - перетворює на звичайні дж обєкти
+//     })
+//     .then((json) => console.log(json));//обробляється отримана інформація
+
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then((asd) => asd.json())
+//     .then((users) => {
+//
+//         for(const {name, username, email} of users) {
+//             document.write(`<div>
+// ${name},
+// ${username},
+// ${email}
+//
+// </div>`);
+//         }
+//     });
+
+// fetch('https://dummyjson.com/products?limit=100')
+//     .then(value => value.json())
+//     // .then(({products}) => {
+//     //     console.log(products);
+//     .then(res => {
+//         let {products} = res;
+//
+//         document.write(`<div>`);
+//         for(const product of products) {
+//             document.write(`<div>`);
+//             document.write(`<p>${product.id}___${product.brand} - ${product.price}</p>`);
+//             document.write(`<img src="${product.thumbnail}" alt="">`)
+//             document.write(`</div>`);
+//         }
+//         document.write(`</div>`);
+//
+//     });
+
+// fetch('https://dummyjson.com/products/add', {
+//     method: 'POST',
+//     headers: {'Content-Type': 'application/json'},
+//     body: JSON.stringify({
+//         title: 'BMW Pencil',
+//     })
+// })
+//
+//     .then(res => res.json())
+//     .then(value => console.log(value));
+
+
+//------------------------------------URL
+
+// fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
+//     .then(value => value.json())
+//     .then(value => {
+// console.log(value) ;
+//     });
+
+// let url = new URL('https://jsonplaceholder.typicode.com/posts');
+// url.searchParams.append('userId' , 8);
+// url.searchParams.set('asd' , 'dknffknk');
+// console.log(url.searchParams.get('asd'));//забрати певну інформацію
+// // url.searchParams.has('asd' , 'dknffknk');//повертає булеві значення
+// // url.searchParams.keys();//повертає ітеруємий обєкт /набір всіх кючів що наявні в данному випадку
+// // url.searchParams.forEach()//проітерувати
+// // url.searchParams.delete()//видалити
+// // url.searchParams.getAll()//отримати повнустю всі параметри
+// // url.searchParams.values()//отримати значення параметрів
+//
+// fetch(url)
+//     .then(value => value.json())
+//     .then(value => {
+//         console.log(value) ;
+//     });
+
+//------------------------------------Regexp and post
+
+// let form = document.forms[0];
+// form.onsubmit = function (ev) {
+//     ev.preventDefault();
+//     let userId = this.userId.value;
+//     let title = this.title.value;
+//     let body = this.body.value;
+//     // console.log(userId.match(/\d/g));//[0-9]
+//     if(!!userId.match((/[0-9]/g) && !!body.match(/(\w+\s){3, }/g))) {
+//
+//         fetch('https://jsonplaceholder.typicode.com/posts', {
+//             method: 'POST',
+//             body: JSON.stringify({
+//                 title: title,
+//                 body: body,
+//                 userId: +userId,
+//             }),
+//             headers: {
+//                 'Content-type': 'application/json; charset=UTF-8',
+//             },
+//         })
+//             .then((response) => response.json())
+//             .then((json) => console.log(json));
+//
+//
+//     }
+//     // let title = this.title.value;
+//    // console.log(!!);///\w[1.5]/g
+//     // console.log(userId, title, body);
+//
+// };
+
+</script>
+
+
+</body>
+</html>
