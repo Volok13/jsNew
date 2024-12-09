@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #target{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #divBox{
+            width: 200px;
+            height: 500px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background: #bcdcea;
+        }
+        #divButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #divBox{
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        #divBox p{
+            font-family: Arial;
+            font-size: 20px;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h2>Text</h2>
+<form id="f1">
+    <input id="i1" name="name" placeholder="Name=Value">
+    <button>send</button>
+</form>
+
+<div id="target" >
+    <div id="divBox">
+
+    </div>
+    <div id="divButton">
+        <button id="uttonSotrByName">Sort by Name</button>
+        <button id="buttonSotrByValue">Sort by Value</button>
+        <button id="buttonSotrByDelete">Delete</button>
+    </div>
+</div>
+
+<!--<div class="data">-->
+<!--    <input type="text" id="name">-->
+<!--    <button id="btn">send</button>-->
+<!--</div>-->
+
+
+<script>
+
+
+    // let data = document.querySelector('.data')
+    // let button = document.querySelector('#btn');
+    // button.onclick = function () {
+    //     let name = document.querySelector('#name').value;
+    //     data.innerText = name;
+    // }
+
+    // localStorage.clear();
+
+    // let arrayObj = array.map(function(value, index){
+    //     let newUser = {
+    //         name: value.name,
+    //         id: index + 1
+    //     };
+    //     return newUser;
+    // })
+    // arrayObj.push(array);
+
+    // let array = [];
+    // console.log(array)
+    // let array = JSON.parse(localStorage.getItem('array')) || [];
+    // array.push('p');
+    // localStorage.setItem('array',JSON.stringify(array));
+    // let f1 = document.forms.f1;
+    // let target = document.getElementById('target');
+    // let ii = document.getElementById('i1')
+    //
+    //
+    // f1.onsubmit = function (ev) {
+    //     ev.preventDefault();
+    //     let value = {name:this.name.value}
+    //     if (value.name) {
+    //         array.push(value);
+    //
+    //         let p = document.createElement('p');
+    //         divBox.appendChild(p);
+    //         p.innerText = value.name;
+    //         i1.value = '';
+    //     }
+    //
+    // }
+    //
+    // let divBox = document.getElementById('divBox');
+    // let divButton = document.getElementById('divButton');
+    //
+    // let buttonSotrByName = document.getElementById('buttonSotrByName');
+    // // buttonSotrByName.onclick = function () {
+    //     for(let filter of p){
+    //         filter = function filt(el) {
+    //             return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+    //         }
+    //     }
+    // }
+
+    // let buttonSotrByValue = document.getElementById('buttonSotrByValue');
+    // // buttonSotrByValue.innerText = 'Sort by Value';
+    //
+    // let buttonSotrByDelete = document.getElementById('buttonSotrByDelete');
+    // // buttonSotrByDelete.innerText = 'Delete';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    divButton.append(buttonSotrByName, buttonSotrByValue, buttonSotrByDelete);
+    target.append(divBox, divButton);
+
+
+
+
+</script>
+</body>
+</html>
